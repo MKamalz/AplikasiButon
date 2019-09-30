@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="403dp"
+        android:layout_height="735dp"
+        android:background="@drawable/gambar"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <TextView
+            android:id="@+id/world"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Aplikasi Tekan Tombol"
+            android:textAlignment="center"
+            android:textColor="#00ff00"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/angka"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/world"
+            android:fontFamily="sans-serif-black"
+            android:text="Silahkan di klik"
+            android:inputType="numberDecimal"
+            android:textColor="#CDA1E1"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/btn1_click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button 1"
+            android:layout_below="@id/angka"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2_click"
+            android:text="button 2"
+            android:layout_below="@id/btn1_click"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/next"
+            android:text="Next"
+            android:layout_below="@id/btn2_click"
+            />
+    </RelativeLayout>
+</ScrollView>

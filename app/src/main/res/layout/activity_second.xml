@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/fas">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/teka"
+        android:textColor="#FF0000"
+        android:text="Silahkan berikan nilai aplikasi"
+        android:id="@+id/texs"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="#FF0000"
+    android:text="Selamat datang di halaman ke 2"
+    android:id="@+id/teka"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kembali"
+            android:layout_below="@id/cek"
+            android:id="@+id/btnback"/>
+    <CheckBox
+        android:id="@+id/cek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_below="@id/minus"
+        android:paddingLeft="16dp"
+        android:textSize="16sp"
+        android:text="Tekan ini kalau berhasil"
+        android:textColor="#00FFAE" />
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:onClick="decrement"
+        android:layout_below="@id/texs"/>
+    <TextView
+        android:id="@+id/angka"
+        android:layout_toRightOf="@id/minus"
+        android:layout_below="@id/texs"
+        android:textSize="30sp"
+        android:text="1"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/plus"
+        android:layout_below="@id/texs"
+        android:onClick="increment"
+        android:text="+"
+        android:layout_toRightOf="@id/angka"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
